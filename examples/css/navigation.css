@@ -1,0 +1,37 @@
+ul#navigation {
+    margin: 0;
+    padding: 8px 0em;
+    background-color: black;
+    width: 100%;
+}
+ul#navigation li {
+    list-style: none;
+    float: left;
+    color: white;   /*  ',...,' */
+    background-color: black;
+
+}
+ul#navigation li.selected a {
+    border-top: 3px solid #DD4B39;
+    padding-top: 5px;
+    font-weight: bold;
+}
+ul#navigation li a {
+    color: inherit;
+    text-decoration: none;
+    padding: 8px;
+}
+ul#navigation li a:hover {
+    background-color: grey;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}

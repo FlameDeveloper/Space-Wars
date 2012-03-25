@@ -22,16 +22,6 @@ label {
     color: #FFFFFF;
 }
 
-form {
-    display: block;
-    width: 20em;
-    background-color: #000033;
-    margin: 1em;
-    padding: 1em;
-    border: 1px solid #e0e0e0;
-    font-family: arial;
-    font-size: 13px;
-}
 #headline {
     font-style: oblique;
     display: block;

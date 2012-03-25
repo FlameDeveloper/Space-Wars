@@ -13,12 +13,12 @@
                 <form action="formvalidator.php" method="post">
                     <p class="form-multi-text">
                         <label for="firstname">Name</label>
-                        <?php if ($attributes["firstname"]["valid"] = false) { ?>
-                        <div id="error">Die Eingabe Ihres Vornamens ist nicht nachvollziehbar.</div>
+                        <?php if (!$attributes["firstname"]["valid"]) { ?>
+                        <div id="error">*Die Eingabe Ihres Vornamens ist nicht nachvollziehbar.</div>
                         <? } ?>
                         <input type="text" name="firstname" id="firstname" />
-                        <?php if ($attributes["lastname"]["valid"] = false) { ?>
-                        <div id="error">Die Eingabe Ihres Nachnamens ist nicht nachvollziehbar.</div>
+                        <?php if (!$attributes["lastname"]["valid"]) { ?>
+                        <div id="error">*Die Eingabe Ihres Nachnamens ist nicht nachvollziehbar.</div>
                         <? } ?>
                         <input type="text" name="lastname" id="lastname" />
                         <?// foreach($msges as $msg) { ?>
@@ -29,29 +29,29 @@
                     </p>
                     <p class="form-text">
                         <label for="username">Nutzernamen w&auml;hlen</label>
-                        <?php if ($attributes["username"]["valid"] = false) { ?>
-                        <div id="error">Die Eingabe Ihres Benuternamens ist nicht nachvollziehbar.</div>
+                        <?php if (!$attributes["username"]["valid"]) { ?>
+                        <div id="error">*Die Eingabe Ihres Benuternamens ist nicht nachvollziehbar.</div>
                         <? } ?>
                         <input type="text" name="username" id="username" />
                     </p>
                     <p class="form-password">
                         <label for="password">Passwort erstellen</label>
-                        <?php if ($attributes["password"]["valid"] = false) { ?>
-                        <div id="error">Die Eingabe Ihres Passwortes ist nicht nachvollziehbar.</div>
+                        <?php if (!$attributes["password"]["valid"]) { ?>
+                        <div id="error">*Die Eingabe Ihres Passwortes ist nicht nachvollziehbar.</div>
                         <? } ?>
                         <input type="password" name="password" id="password" />
                     </p>
                     <p class="form-password">
                         <label for="password_confirmation">Passwort best&auml;tigen</label>
-                        <?php if ($attributes["password_confirmation"]["valid"] = false) { ?>
-                        <div id="error">Die wiederholte Passworteingabe entspricht nicht der vorherigen.</div>
+                        <?php if (!$attributes["password_confirmation"]["valid"]) { ?>
+                        <div id="error">*Die wiederholte Passworteingabe entspricht nicht der vorherigen.</div>
                         <? } ?>
                         <input type="password" name="password_confirmation" id="password_confirmation" />
                     </p>
                     <p class="form-date">
                         <label for="birth_day">Geburtsdatum</label>
-                        <?php if ($attributes["birth_day"]["valid"] = false) { ?>
-                        <div id="error">Die Eingabe des Geburtstages ist nicht nachvollziehbar.</div>
+                        <?php if (!$attributes["birth_day"]["valid"]) { ?>
+                        <div id="error">*Die Eingabe des Geburtstages ist nicht nachvollziehbar.</div>
                         <? } ?>
                         <input type="text" name="birth_day" id="birth_day" />
                         <select name="birth_month" id="birth_month">
@@ -68,8 +68,8 @@
                             <option value="11">November</option>
                             <option value="12">Dezember</option>
                         </select>
-                        <?php if ($attributes["birth_year"]["valid"] = false) { ?>
-                        <div id="error">Die Eingabe Ihres Geburtsjahres ist nicht nachvollziehbar.</div>
+                        <?php if (!$attributes["birth_year"]["valid"]) { ?>
+                        <div id="error">*Die Eingabe Ihres Geburtsjahres ist nicht nachvollziehbar.</div>
                         <? } ?>
                         <input type="text" name="birth_year" id="birth_year" />
                     </p>
@@ -83,14 +83,14 @@
                     </p>
                     <p class="form-text">
                         <label for="email">E-Mail-Adresse</label>
-                        <?php if ($attributes["firstname"]["valid"] = false) { ?>
-                        <div id="error">Die Eingabe der Email-Adresse ist nicht nachvollziehbar.</div>
+                        <?php if (!$attributes["firstname"]["valid"]) { ?>
+                        <div id="error">*Die Eingabe der Email-Adresse ist nicht nachvollziehbar.</div>
                         <? } ?>
                         <input type="text" name="email" id="email" />
                     </p>
                     <p class="form-checkbox">
-                        <?php if ($attributes["firstname"]["valid"] = false) { ?>
-                        <div id="error">Sie müssen den Nutzungsbedingungen zustimmen.</div>
+                        <?php if (!$attributes["firstname"]["valid"]) { ?>
+                        <div id="error">*Sie müssen den Nutzungsbedingungen zustimmen.</div>
                         <? } ?>
                         <input type="checkbox" name="terms_of_service" id="terms_of_service"  />
                         <label for="terms_of_service">

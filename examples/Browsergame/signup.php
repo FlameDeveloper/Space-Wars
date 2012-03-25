@@ -24,8 +24,6 @@
                         <?// foreach($msges as $msg) { ?>
                         <?//= $msg ?><br/>
                         <?// } ?>
-                        <!-- TODO: Bedingung schreiben und optional mit CSS formatieren -->
-                        <!-- TODO: fuer jedes Feld -->
                     </p>
                     <p class="form-text">
                         <label for="username">Nutzernamen w&auml;hlen</label>

@@ -114,5 +114,6 @@ a {
 }
 #error {
     font-size: 1em;
+    color: red;
 }
 

@@ -1,0 +1,82 @@
+#form
+{
+    width: 20em;
+    background-color: #f0f0f0;
+    margin: 2em;
+    padding: 1em;
+    border: 1px solid #e0e0e0;
+    font-family: arial;
+    font-size: 13px;
+}
+
+label {
+    display: block;
+    font-weight: bolder;
+    color: #222;
+}
+input, select {
+    padding: 4px;
+    /* hä */
+
+     /* #4d90fe */
+}
+input:focus, select:focus {
+    border-color: #4d90fe;
+    outline: none;
+}
+.form-buttons input {
+    color: black;
+}
+
+.form-checkbox {
+    overflow: auto;
+    /* clearfix */
+}
+
+.form-checkbox input {
+    float: left;
+}
+.form-checkbox label {
+    font-weight: normal;
+    display: block;
+    margin-left: 2.5em;
+}
+.form-multi-text input {
+    width: 8.75em;
+}
+.form-text input, .form-password input, .form-select select {
+    width: 18.75em;
+}
+.form-date input {
+    width: 4.9em;
+}
+.form-phone input {
+    width: 13.75em;
+}
+.form-buttons {
+    text-align: right;
+}
+.form-buttons input {
+    color: white;
+    background: #357AE8;
+    border: 1px solid #2F5BB7;
+    padding: 5px;
+}
+#form_check
+{
+    width: 25em;
+    background-color: #f0f0f0;
+    margin: 2em;
+    padding: 1em;
+    border: 1px solid #e0e0e0;
+    font-family: arial;
+    font-size: 13px;
+}
+dt {
+    font-weight: bold;
+}
+h1 {
+    text-decoration: underline;
+}
+
+.error

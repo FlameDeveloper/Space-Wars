@@ -1,0 +1,109 @@
+body {
+    /*background: url(../images/space_wars.jpg);
+    background-size: 100%; */
+    background-color: black;
+}
+img {
+    margin: 2em;
+    height: 600px;
+    width: 1000px;
+    z-index: -1;
+    margin-left:auto;
+    margin-right:auto;
+    position: absolute;
+}
+label {
+    display: block;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+#content {
+    z-index: 2;
+    color: #FFFFFF;
+}
+
+form {
+    display: block;
+    width: 20em;
+    background-color: #000033;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #e0e0e0;
+    font-family: arial;
+    font-size: 13px;
+}
+#headline {
+    font-style: oblique;
+    display: block;
+    font-size: 5em;
+    margin-left:400px;
+    color: red;
+}
+
+/* ------------------------------ */
+
+input, select {
+    padding: 4px;
+    /* hä */
+
+    /* #4d90fe */
+}
+input:focus, select:focus {
+    border-color: #4d90fe;
+    outline: none;
+}
+.form-buttons input {
+    color: black;
+}
+
+.form-checkbox {
+    overflow: auto;
+    /* clearfix */
+}
+
+.form-checkbox input {
+    float: left;
+}
+.form-checkbox label {
+    font-weight: normal;
+    display: block;
+    margin-left: 2.5em;
+}
+.form-multi-text input {
+    width: 8.75em;
+}
+.form-text input, .form-password input, .form-select select {
+    width: 18.75em;
+}
+.form-date input {
+    width: 4.9em;
+}
+.form-phone input {
+    width: 13.75em;
+}
+.form-buttons {
+    text-align: right;
+}
+.form-buttons input {
+    color: white;
+    background: #357AE8;
+    border: 1px solid #2F5BB7;
+    padding: 5px;
+}
+#form_check
+{
+    width: 25em;
+    background-color: #f0f0f0;
+    margin: 2em;
+    padding: 1em;
+    border: 1px solid #e0e0e0;
+    font-family: arial;
+    font-size: 13px;
+}
+dt {
+    font-weight: bold;
+}
+#first_name {
+    color: red;
+    font-size: 20px;
+}

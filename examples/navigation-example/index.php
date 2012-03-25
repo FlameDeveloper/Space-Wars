@@ -102,8 +102,8 @@ if(!$has_selected) {
         <div style="margin-left: 5em;">
             <ul id='navigation' class="clearfix">
                 <?php
-// Navigation zeichnen
 
+// Navigation zeichnen
 foreach($navigation as &$element) {
   $title = $element['title'];
   $link  = "index.php?page=" . $element['id'];
@@ -116,11 +116,6 @@ foreach($navigation as &$element) {
 }
 
                 ?>
-                <!--
-                <li><a href="index.php">Suchen</a></li>
-                <li><a href="index.php">Bilder</a></li>
-                <li class='selected'><a href="#">Videos</a></li>
-                <li><a href="#">Maps</a></li>-->
             </ul>
         </div>
         <p>

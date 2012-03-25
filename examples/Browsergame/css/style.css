@@ -109,4 +109,10 @@ dt {
     font-family: arial;
     font-size: 13px;
 }
+a {
+    color: orange;
+}
+#error {
+    font-size: 1em;
+}
 

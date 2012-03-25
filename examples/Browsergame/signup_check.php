@@ -63,7 +63,7 @@ $months = array(
                         <? } ?>
                     </dd>
                 </dl>
-                <form action="">
+                <form action="signup_accomplished.php" method="post">
                 <input type="hidden" name="firstname" value="$_POST['firstname']">
                 <input type="hidden" name="lastname" value="$_POST['lastname']">
                 <input type="hidden" name="username" value="$_POST['username']">
@@ -77,7 +77,3 @@ $months = array(
         </div>
     </body>
 </html>
-
-<?php
-
-?>

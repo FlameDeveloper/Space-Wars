@@ -1,4 +1,7 @@
 <?php
+
+require 'formvalidator.php';
+
 ?>
 
 <html>
@@ -10,7 +13,7 @@
         <img src="images/space_wars.jpg" alt="background image" id="bg" />
         <div id="content">
             <div id="headline">Space Wars</div>
-                <form action="formvalidator.php" method="post">
+                <form action="signup.php" method="post">
                     <p class="form-multi-text">
                         <label for="firstname">Name</label>
                         <?php if (!$attributes["firstname"]["valid"]) { ?>
@@ -96,9 +99,10 @@
                             Datenschutzbestimmungen gelesen.
                         </label>
                     </p>
-                    <p class="form-buttons">
-                        <input type="submit" value="Registrieren" />
-                    </p>
+                    <a class="form-buttons-decline" href="index.php">
+                        Zur&uuml;ck
+                    </a>
+                    <input class="form-buttons-accept" type="submit" value="Registrieren"/>
             </form>
         </div>
     </body>

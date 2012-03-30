@@ -17,6 +17,10 @@ $attributes = array(
         "valid" => true,
         "msg" => array()
     ),
+    "password_confirmation" => array(
+        "valid" => true,
+        "msg" => array()
+    ),
     "birth_day" => array(
         "valid" => true,
         "msg" => array()
@@ -142,9 +146,7 @@ if ($_POST) {
     //foreach($attributes as $name => $attribute) // lol
     //    if($attribute["valid"] == false )
     //        $error = true;
-    if ($error) { // so
-        require 'signup.php';
-    } else {
+    if (!$error) { // so
         require 'signup_check.php';
     }
 }

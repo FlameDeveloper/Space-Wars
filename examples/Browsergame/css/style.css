@@ -52,7 +52,7 @@ input:focus, select:focus {
     border-color: #4d90fe;
     outline: none;
 }
-.form-buttons input {
+.form-buttons-accept input {
     color: black;
 }
 
@@ -81,13 +81,23 @@ input:focus, select:focus {
 .form-phone input {
     width: 13.75em;
 }
-.form-buttons {
-    text-align: right;
+.form-buttons-accept {
+     text-align: right;
+ }
+.form-buttons-decline {
+    text-align: left;
 }
-.form-buttons input {
+.form-buttons-accept {
     color: white;
     background: #357AE8;
     border: 1px solid #2F5BB7;
+    padding: 5px;
+    text-decoration: underline;
+}
+.form-buttons-decline {
+    color: white;
+    background: #303030;
+    border: 1px solid #303030;
     padding: 5px;
 }
 
@@ -110,10 +120,13 @@ dt {
     font-size: 13px;
 }
 a {
+    color: #adff2f;
+}
+#signup_link {
     color: orange;
+    font-size: 1.5em;
 }
 #error {
     font-size: 1em;
     color: red;
 }
-
